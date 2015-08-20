@@ -1,8 +1,19 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This is an exercise to work with scoping.
 
-## Write a short comment describing this function
+# The first function allows a user to set a matrix to a stored variable
+# The returned object has a set of funtions (mostly accessors) for working
+# with that matrix.
+#
+# The primary goal of this is to store the inverse of the user provided matrix.
+#
+#
+# The second function provides the mechansim to retrieve the user provided matrix
+# from the original function and then build the inverse and store it.
 
+
+# This function allows storing a original matrix and then storing a inverse matrix.
+# Accessors to help with this are provided.
+#
 makeCacheMatrix <- function(mat.val = matrix()) {
 
   # initialization, there is no inversed matrix and it will have to be built.
@@ -45,8 +56,9 @@ makeCacheMatrix <- function(mat.val = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+# This function retrieves a matrix from the list contructed by makeCacheMatrix. The 
+# inverse of the matrix is then built and stored back into the cache.
+#
 cacheSolve <- function(x, ...) {
   resp.mat <- NULL
   
